@@ -45,11 +45,25 @@ public class MainController {
 		return new ModelAndView("admin");
 	}
 	
-	@RequestMapping(value = "/admin/newpage", method = RequestMethod.GET)
-	public ModelAndView newpage() {
+	@RequestMapping(value = "/admin/policies", method = RequestMethod.GET)
+	public ModelAndView policies() {
 		logger.entry();
 		logger.exit();
-		return new ModelAndView("newpage");
+		return new ModelAndView("policies");
+	}
+
+	@RequestMapping(value = "/admin/openclaims", method = RequestMethod.GET)
+	public ModelAndView openclaims() {
+		logger.entry();
+		logger.exit();
+		return new ModelAndView("openclaims");
+	}
+
+	@RequestMapping(value = "/admin/closedclaims", method = RequestMethod.GET)
+	public ModelAndView closedclaims() {
+		logger.entry();
+		logger.exit();
+		return new ModelAndView("closedclaims");
 	}
 	
 	
